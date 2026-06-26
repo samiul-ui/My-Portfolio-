@@ -1,0 +1,150 @@
+/* Base settings and font styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b); /* Deep modern dark gradient background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* About Section Container with perspective for 3D effect */
+.about-section {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 850px;
+}
+
+/* 3D Glassmorphism Main Card */
+.about-card {
+    background: rgba(255, 255, 255, 0.05); /* Semi-transparent white */
+    backdrop-filter: blur(12px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle edge highlight */
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 
+                inset 0 1px 2px rgba(255, 255, 255, 0.2); /* Internal 3D depth glow */
+    overflow: hidden;
+    transform: rotateX(2deg) rotateY(-1deg); /* Slight 3D tilted angle */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Smooth 3D tilt hover animation */
+.about-card:hover {
+    transform: rotateX(0deg) rotateY(0deg) scale(1.02); /* Straightens and scales up slightly */
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2); /* Adds a subtle neon emerald glow on hover */
+}
+
+/* Header Green Banner style mimicking the image */
+.about-header {
+    background: linear-gradient(90deg, #10b981, #059669); /* Beautiful emerald green gradient */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-header h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 3D text shadow */
+}
+
+/* Main Body Styling */
+.about-body {
+    padding: 35px;
+    color: #cbd5e1; /* Soft readable text color */
+}
+
+.about-body h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-left: 4px solid #10b981; /* Left vertical neon indicator line */
+    padding-left: 10px;
+}
+
+.about-body p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+/* Styling for bold emphasized text */
+.about-body strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Specific text color highlighting matching the original design */
+.about-body strong:nth-of-type(2), 
+.about-body strong:nth-of-type(3) {
+    color: #34d399; /* Light emerald color */
+}
+
+/* Inner 3D Container (What I Bring to the Table) */
+.skills-box {
+    background: rgba(15, 23, 42, 0.6); /* Darker transparent layer inside the glass card */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.4); /* Inward shadow for carving/sunken 3D effect */
+}
+
+.skills-box h4 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skills-box ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.skills-box ul li {
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Custom glow bullet points */
+.skills-box ul li::before {
+    content: "•";
+    color: #10b981; /* Glowing emerald bullet */
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Call to action typography and specific colored keywords */
+.cta-text {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.cta-text span {
+    color: #a855f7; /* Vibrant purple text for exciting projects */
+    font-weight: 600;
+}
+
+.cta-text .highlight {
+    color: #ec4899; /* Pink accent text for connect */
+    font-weight: 600;
+}

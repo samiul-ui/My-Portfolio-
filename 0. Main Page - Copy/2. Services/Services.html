@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Engineering Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Component Container -->
+    <div class="matrix-wrapper">
+        <div class="service-core-card">
+            <!-- Glitch / Cyberpunk Border Lines -->
+            <div class="card-glow-track"></div>
+            
+            <div class="card-header-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+            </div>
+            
+            <h3 class="service-title">Responsive Engineering</h3>
+            <p class="service-summary">
+                Compiling high-fidelity design layouts into highly adaptable, cross-platform algorithmic grid structures optimized for 4K displays, neural networks telemetry, and mobile matrices.
+            </p>
+            
+            <button class="action-trigger-btn" onclick="openEngineDashboard()">
+                Service Details 
+                <span class="matrix-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- AI/Machine Learning Dashboard Expansion Panel (Deep Technical Content) -->
+    <div id="telemetryDashboard" class="dashboard-overlay">
+        <div class="backdrop-blur-trigger" onclick="closeEngineDashboard()"></div>
+        
+        <div class="dashboard-console">
+            <!-- Console Controls -->
+            <button class="console-close-trigger" onclick="closeEngineDashboard()">&times;</button>
+            
+            <!-- Terminal Header Status -->
+            <div class="console-header-telemetry">
+                <div class="status-indicator">
+                    <span class="pulse-dot"></span>
+                    <span class="system-tag">SYSTEM // FULL_STACK_ENGINE_ACTIVE</span>
+                </div>
+                <h2 class="console-main-headline">Algorithmic Grid & Backend Telemetry Metrics</h2>
+                <p class="console-sub-headline">An exhaustive computational deep-dive into scalable layouts, data extraction arrays, and machine learning node orchestrations.</p>
+            </div>
+
+            <!-- Deep Content Matrix Section -->
+            <div class="console-data-grid">
+                
+                <!-- Node 01: Core Layout Pipeline -->
+                <div class="data-node-block">
+                    <div class="node-index">NODE_01 // FLUID_TOPOLOGY</div>
+                    <h4>Mathematical Fluid Scaling & Proportional Compilation</h4>
+                    <p>Moving beyond basic hardcoded breakpoints. The compilation engine utilizes multi-variable algebraic layout logic using dynamic CSS functions and viewport dimensions ($vw, vh$). Layout computational models automatically handle linear aspect ratio scaling from ultra-dense 4K workstations down to compact foldables, ensuring uniform structural telemetry.</p>
+                </div>
+
+                <!-- Node 02: Performance Telemetry -->
+                <div class="data-node-block">
+                    <div class="node-index">NODE_02 // RENDER_PIPELINE</div>
+                    <h4>Core Web Vitals & Asynchronous Asset Pipeline</h4>
+                    <p>Optimizing critical rendering paths to guarantee elite performance sub-0.4s metrics. Implements aggressive lazy loading arrays, adaptive content delivery networks via custom image-set markup, DOM node weight reduction scripts, and advanced asynchronous script compilation matrixes to achieve top-tier PageSpeed performance indices.</p>
+                </div>
+
+                <!-- Node 03: Engine Synchronization -->
+                <div class="data-node-block">
+                    <div class="node-index">NODE_03 // CROSS_ENGINE</div>
+                    <h4>Cross-Browser Compilation & WebKit/Blink Alignment</h4>
+                    <p>Mitigating rendering disparities across modern layout compilation pipelines. Utilizing robust continuous deployment testing loops to dynamically monitor runtime variations across WebKit, Gecko, and Blink environments. Strict polyfill deployment eliminates engine anomalies while reinforcing accessibility semantics.</p>
+                </div>
+
+                <!-- Node 04: Backend API Array -->
+                <div class="data-node-block">
+                    <div class="node-index">NODE_04 // BACKEND_INTEGRATION</div>
+                    <h4>Scalable Server Architecture & RESTful API Mesh</h4>
+                    <p>Engineered with performance-driven Node.js and Python infrastructures. Connects serverless functions to multi-tenant SQL/NoSQL databases with optimized pooling configurations. Implements secure JWT/OAuth authentication handshakes and high-throughput Redis caching layers to streamline concurrent data parsing pipelines.</p>
+                </div>
+
+                <!-- Node 05: Data Analytics Core -->
+                <div class="data-node-block">
+                    <div class="node-index">NODE_05 // DATA_INTELLIGENCE</div>
+                    <h4>B2B Lead Pipelines & Automated Web Intelligence</h4>
+                    <p>Deploying advanced headless scraping clusters capable of traversing deep-web parameters safely. Extracted raw telemetry is pipelined through filtering algorithms, producing structured corporate intelligence, verified lead matrixes, and actionable market trends mapped directly to custom cloud data environments.</p>
+                </div>
+
+                <!-- Node 06: ML Automation -->
+                <div class="data-node-block">
+                    <div class="node-index">NODE_06 // AI_AUTOMATION</div>
+                    <h4>AI Workflow Orchestration & Intelligent Scripting</h4>
+                    <p>Integrating machine learning API models directly into backend systems to automate complex tasks. Leveraging natural language parsing networks to analyze structured inputs, trigger automated smart decision workflows, and output synthetic database records tailored for scalable growth.</p>
+                </div>
+
+            </div>
+
+            <!-- Deep Technical Console Footer Status -->
+            <div class="console-telemetry-footer">
+                <div class="telemetry-stat"><strong>LAYOUT MATRIX:</strong> Fluid Variable Grid</div>
+                <div class="telemetry-stat"><strong>ACCESSIBILITY:</strong> WCAG 2.2 AAA Compliant</div>
+                <div class="telemetry-stat"><strong>COMPILATION LATENCY:</strong> ~0.38s FCP</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /**
+ * Triggers the Advanced Telemetry Dashboard Panel state
+ */
+function openEngineDashboard() {
+    const overlay = document.getElementById('telemetryDashboard');
+    overlay.classList.add('active');
+    
+    // Disables background window interaction during console operations
+    document.body.style.overflow = 'hidden';
+}
+
+/**
+ * Gracefully terminates the Console Matrix Overlay
+ */
+function closeEngineDashboard() {
+    const overlay = document.getElementById('telemetryDashboard');
+    overlay.classList.remove('active');
+    
+    // Restores default window scrolling functionality
+    document.body.style.overflow = 'auto';
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiul Islam | Digital Portfolio & Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+    <!-- ─── 1. Aesthetic Navigation Menu ─── -->
+    <header class="header-area">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#">Samiul<span>-islam</span></a>
+            </div>
+            
+            <!-- Hamburger Menu Icon for Mobile Devices -->
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu-list">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ─── 2. Home / Hero Section ─── -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Transforming Logic into <br><span>Digital Reality</span></h1>
+            <p>Web Developer & Lead Generation Specialist</p>
+            <a href="#contact" class="cta-btn">Let's Connect</a>
+        </div>
+    </section>
+
+    <!-- ─── 3. About Me Section ─── -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-box">
+                <p>"I am <strong>MD. Samiul Islam</strong>, a digital strategist and aspiring developer who thrives at the intersection of clean code and targeted growth. Based in Bogra, Bangladesh, I don't just build websites or collect data; I architect digital experiences that solve real-world problems.</p>
+                <p>With a core foundation in Python and Modern Web Technologies, I bridge the gap between complex backend logic and intuitive user interfaces. My expertise extends into High-Precision B2B Lead Generation, where I help businesses decode their market and connect with the right audience through data-driven insights.</p>
+                <p>I am not just a service provider—I am a continuous learner and a problem solver, committed to delivering accuracy, efficiency, and innovation in every line of code and every lead I generate."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── 4. Professional Services Section ─── -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Services</h2>
+                <div class="line"></div>
+                <p class="sub-title">"Hello! I am a dedicated Web Developer and Lead Generation Specialist focused on helping businesses grow through digital solutions. Here’s how I can help you:"</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Web Development -->
+                <div class="service-card slide-effect">
+                    <div class="srv-icon-box">
+                        <span class="srv-icon">💻</span>
+                    </div>
+                    <h3>Web Design & Development</h3>
+                    <p>I build modern, clean, and responsive websites using HTML, CSS, and Python. Whether it's a personal portfolio or a business landing page, I ensure it looks great on all devices.</p>
+                </div>
+                <!-- Service 2: Lead Generation -->
+                <div class="service-card slide-effect">
+                    <div class="srv-icon-box">
+                        <span class="srv-icon">🎯</span>
+                    </div>
+                    <h3>B2B Lead Generation</h3>
+                    <p>Finding the right customers is the key to success. I provide high-quality B2B Lead Generation services, including LinkedIn research and verified email listing to help you reach your target audience faster.</p>
+                </div>
+                <!-- Service 3: Data Entry -->
+                <div class="service-card slide-effect">
+                    <div class="srv-icon-box">
+                        <span class="srv-icon">📊</span>
+                    </div>
+                    <h3>Data Entry & Admin Support</h3>
+                    <p>I offer precise and organized Data Entry and Excel Management services. I help you keep your business data clean, updated, and easy to access.</p>
+                </div>
+            </div>
+
+            <!-- Why Hire Me Subsection -->
+            <div class="why-hire-me">
+                <h3>💡 Why Hire Me?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item"><strong>Accuracy:</strong> I prioritize quality and precision in every task.</div>
+                    <div class="benefit-item"><strong>Fast Delivery:</strong> I respect your time and always meet deadlines.</div>
+                    <div class="benefit-item"><strong>Modern Approach:</strong> I use the latest tools and tech to give you the best results.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── 5. Contact Section ─── -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Phone Card with Reveal Feature -->
+                <div class="contact-phone-card">
+                    <div class="p-icon-box">
+                        <span class="p-icon">📞</span>
+                    </div>
+                    <h4>Call or Connect</h4>
+                    <button id="reveal-btn" onclick="showNumber()">Click to Show Number</button>
+                    <p id="phone-number" style="display: none;">
+                        <a href="tel:+8801944375089" class="call-link">+880 1944375089</a>
+                    </p>
+                </div>
+
+                <!-- Social Media Links Grid -->
+                <div class="social-links-grid">
+                    <a href="https://wa.me/message/NJTA2TTK7U75C1" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+                    <a href="https://www.facebook.com/md.samiul.islam.184780" target="_blank" class="social-btn facebook">Facebook</a>
+                    <a href="https://www.linkedin.com/in/md-samiul-islam-617473391?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-btn linkedin">LinkedIn</a>
+                    <a href="https://x.com/samiul50457" target="_blank" class="social-btn twitter">X (Twitter)</a>
+                    <a href="https://www.instagram.com/_samiul_islam_1?igsh=MXA0enprcDh6azEzag==" target="_blank" class="social-btn instagram">Instagram</a>
+                    <a href="https://www.threads.com/@_samiul_islam_1" target="_blank" class="social-btn threads">Threads</a>
+                    <a href="https://www.tiktok.com/@mdsamiulislam1868?_r=1&_t=ZS-957R9foD6VF" target="_blank" class="social-btn tiktok">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── 6. Footer Area ─── -->
+    <footer class="footer-area">
+        <p>&copy; 2026 Samiul Islam. All Rights Reserved.</p>
+        <p>Built with Passion | Bogra, Bangladesh</p>
+    </footer>
+
+    <!-- ─── JavaScript for Mobile Menu & Phone Number Reveal ─── -->
+    <script>
+        // Toggle mobile responsive navigation menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenuInst = document.getElementById('nav-menu-list');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenuInst.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('open');
+        });
+
+        // Click handler to reveal the hidden phone number
+        function showNumber() {
+            document.getElementById("phone-number").style.display = "block";
+            document.getElementById("reveal-btn").style.display = "none";
+        }
+    </script>
+</body>
+</html>

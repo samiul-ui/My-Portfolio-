@@ -1,0 +1,255 @@
+/* ─── 🛡️ PRIVACY POLICY HOVER-READY 3D ENGINE ─── */
+.privacy-wrapper {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px 45px;
+    background: #ffffff;
+    border-radius: 28px;
+    /* Soft premium light luxury floating shadow structure */
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.03), 
+                0 10px 30px rgba(0, 0, 0, 0.01),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+/* Master Heading Section Typography & Accent Design */
+.privacy-header {
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.header-icon {
+    font-size: 3.2rem;
+    color: #0077B5; /* Central Theme Accent Branding */
+    margin-bottom: 15px;
+    filter: drop-shadow(0 10px 20px rgba(0, 119, 181, 0.25));
+}
+
+.privacy-header h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.75px;
+}
+
+.last-update {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-top: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.header-bar {
+    width: 70px;
+    height: 5px;
+    background: linear-gradient(90deg, #0077B5, #00f2fe);
+    border-radius: 3px;
+    margin: 18px auto 0 auto;
+}
+
+.welcome-text {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #475569;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 50px auto;
+}
+
+/* Base Matrix Structure for the List System */
+.privacy-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Luxury 3D Elevated Card Architecture */
+.privacy-item {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    
+    /* Hardware Accelerated Balanced 3D Configuration */
+    transform-style: preserve-3d;
+    transform: perspective(1200px) rotateX(1.5deg) translateY(0px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.015);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+                box-shadow 0 4px cubic-bezier(0.25, 1, 0.5, 1),
+                border-color 0.4s ease;
+}
+
+/* Fluid Hover Elevate States */
+.privacy-item:hover {
+    transform: perspective(1200px) rotateX(0deg) translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 119, 181, 0.07);
+    border-color: rgba(0, 119, 181, 0.25);
+}
+
+/* Decorative Icon Component Boxes */
+.item-icon-box {
+    width: 54px;
+    height: 54px;
+    background: rgba(0, 119, 181, 0.05);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #0077B5;
+    flex-shrink: 0;
+    transition: all 0.35s ease;
+}
+
+.privacy-item:hover .item-icon-box {
+    background: linear-gradient(135deg, #0077B5, #00a0f0);
+    color: #ffffff;
+    transform: scale(1.05) translateZ(10px);
+    box-shadow: 0 8px 20px rgba(0, 119, 181, 0.2);
+}
+
+.item-content {
+    flex: 1;
+}
+
+.item-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.item-content p {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #475569;
+}
+
+/* Secondary Multi-Level Bullet System Layout */
+.sub-list {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sub-item {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: #475569;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sub-item::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: #0077B5;
+    border-radius: 50%;
+}
+
+/* System Exception Highlight Card Block */
+.sub-item-note {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: #334155;
+    padding: 12px 18px;
+    background: rgba(241, 245, 249, 0.6);
+    border-left: 4px solid #ff4a5a; /* Striking Crimson Accent Warning State */
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+/* 📂 LINK REPOSITORY ARCHITECTURE (SECTION 4) */
+.link-repository-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.repo-link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    background: #f8fafc;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    color: #334155;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Hover Response Arrays mapped dynamically across the repository grid */
+.repo-link-item:hover {
+    background: #ffffff;
+    border-color: #0077B5;
+    color: #0077B5;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+.post-link-notice {
+    font-size: 0.9rem !important;
+    color: #64748b !important;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+/* ✉️ INTERACTIVE ACTION HUB BUTTON (SECTION 6) */
+.contact-action-wrapper {
+    margin-top: 18px;
+}
+
+.contact-redirect-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-redirect-btn:hover {
+    background: linear-gradient(90deg, #0077B5, #00a0f0);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 119, 181, 0.25);
+}
+
+/* ─── 📱 FLUID MOBILE RESPONSIVE ENGINE ─── */
+@media (max-width: 768px) {
+    .privacy-wrapper {
+        margin: 30px 15px;
+        padding: 35px 20px;
+    }
+    .privacy-item {
+        flex-direction: column;
+        gap: 18px;
+        padding: 22px;
+    }
+    .privacy-header h1 {
+        font-size: 2rem;
+    }
+    .link-repository-grid {
+        grid-template-columns: 1fr;
+    }
+}

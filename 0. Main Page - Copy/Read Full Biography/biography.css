@@ -1,0 +1,230 @@
+/* Core Professional Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040712;
+    color: #cbd5e1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.75;
+    overflow-x: hidden;
+}
+
+/* Elegant Back Navigation Link */
+.kinetic-nav {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 0 40px;
+}
+
+.nav-back-link {
+    color: #00f0ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.4s ease;
+}
+
+.nav-back-link:hover {
+    color: #ff0055;
+}
+
+/* Enormous Cinematic Header */
+.container-3d-space {
+    max-width: 1200px;
+    margin: 40px auto 120px auto;
+    padding: 0 40px;
+}
+
+.hero-3d-header {
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slowSlideIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.badge-layer {
+    font-family: monospace;
+    font-size: 11px;
+    color: #ff0055;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.glaze-title {
+    font-size: 54px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.lead-text {
+    font-size: 19px;
+    color: #94a3b8;
+    max-width: 800px;
+}
+
+.divider-3d-glow {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.3) 0%, rgba(255, 0, 85, 0.05) 100%);
+    margin-bottom: 70px;
+}
+
+/* Massive 3D Grid Layout */
+.biography-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.full-width-node {
+    grid-column: span 2;
+}
+
+/* Advanced Cinematic 3D Cards */
+.card-3d-segment {
+    position: relative;
+    background: linear-gradient(150deg, #0a1126 0%, #040815 100%);
+    border: 1px solid rgba(0, 240, 255, 0.08);
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                border-color 0.5s ease, 
+                box-shadow 0.5s ease;
+}
+
+/* Super Smooth 3D Move and Glow on Hover */
+.card-3d-segment:hover {
+    border-color: rgba(255, 0, 85, 0.4);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.7), 0 0 40px rgba(255, 0, 85, 0.05);
+    transform: perspective(1000px) translateZ(15px) rotateX(2deg) rotateY(-2deg);
+}
+
+/* Enormous Bold 3D Icons */
+.huge-3d-logo {
+    font-size: 75px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.6));
+    transform: translateZ(40px); /* Extrude icon forward in 3D Space */
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card-3d-segment:hover .huge-3d-logo {
+    transform: translateZ(60px) scale(1.05);
+}
+
+.node-counter {
+    display: block;
+    font-family: monospace;
+    font-size: 11px;
+    color: #64748b;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.card-3d-segment h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+    transform: translateZ(25px);
+}
+
+.card-3d-segment p {
+    font-size: 15.5px;
+    color: #94a3b8;
+    margin-bottom: 22px;
+    text-align: justify;
+    transform: translateZ(15px);
+}
+
+/* Internal Spec Table Integration */
+.internal-spec-table {
+    margin-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    transform: translateZ(20px);
+}
+
+.spec-row {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 18px 0;
+}
+
+.spec-label {
+    width: 250px;
+    font-weight: 700;
+    color: #00f0ff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.spec-value {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+/* Cinematic Footer Layout */
+.cinematic-footer {
+    margin-top: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 12px;
+    color: #475569;
+}
+
+/* Standard Heavy Animation Matrix Keyframes */
+@keyframes slowSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seamless Compression Topology */
+@media (max-width: 968px) {
+    .biography-main-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .full-width-node {
+        grid-column: span 1;
+    }
+    .glaze-title {
+        font-size: 36px;
+    }
+    .card-3d-segment {
+        padding: 35px;
+    }
+    .spec-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .spec-label {
+        width: 100%;
+    }
+}

@@ -1,0 +1,353 @@
+/* রিসেট কোড (মার্জিন-প্যাডিং ঠিক করার জন্য) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* মেইন হেডার এরিয়া */
+.header-area {
+    background-color: #ffffff; /* সাদা ব্যাকগ্রাউন্ড */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* হালকা নিচের শ্যাডো */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* নববার লেআউট (Flexbox দিয়ে সাজানো) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+/* ১. লোগো স্টাইল */
+.nav-logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111111;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-logo a span {
+    color: #0070f3; /* ডট চিহ্নের কালার নীল */
+}
+
+/* ২. মেনু আইটেম স্টাইল */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* প্রতিটি মেনুর মাঝখানের দূরত্ব */
+}
+
+.nav-menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+/* মাউস নিলে মেনুর নিচে সুন্দর আন্ডারলাইন অ্যানিমেশন */
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0070f3;
+    transition: width 0.3s ease;
+}
+
+
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #15008b; /* হোভার করলে লেখা নীল হবে */
+}
+
+/* ৩. সার্চ বার স্টাইল */
+.nav-search form {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+    border-radius: 50px; /* গোল কোণা */
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-search form:focus-within {
+    background-color: #ffffff;
+    border-color: #0070f3;
+    box-shadow: 0 0 8px rgba(0, 112, 243, 0.15);
+}
+
+.nav-search input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    color: #333333;
+    width: 180px; /* সার্চ বক্সের সাইজ */
+    transition: width 0.3s ease;
+}
+
+/* সার্চ বক্সে ক্লিক করলে সেটি একটু বড় হবে */
+.nav-search input:focus {
+    width: 220px;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0 5px;
+    transition: transform 0.2s ease;
+}
+
+.search-btn:hover {
+    transform: scale(1.1); /* হোভার করলে ইমোজি একটু বড় হবে */
+}
+
+/* রেসপন্সিভ ছোট স্ক্রিনের জন্য (Mobile & Tablet) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .nav-menu {
+        gap: 15px;
+    }
+    .nav-search input {
+        width: 100%;
+    }
+    .nav-search input:focus {
+        width: 100%;
+    }
+}
+
+
+
+/* Contact Section General Styling */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Left Column: Info */
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+a.contact-point {
+   background-color: #73b0fa;
+   border: 2px solid #fbff04;
+   border-radius: 50px;
+   padding: 10px 25px;
+   color: #ffffff;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #0070f3;
+     position: relative; /* এটি দিতেই হবে */
+    width: 250px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fbfdff; /* ডিফল্ট লেখার কালার */
+    background-color: #e6f2ff; /* ডিফল্ট ব্যাকগ্রাউন্ড কালার */
+    border: 2px solid #0070f3;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden; /* বাইরের বাড়তি কালার লুকিয়ে রাখার জন্য */
+    z-index: 1;
+    transition: color 2s ease; 
+}
+
+.info-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%; /* শুরুতে কালারটি ডানপাশে মেইন বক্সের বাইরে লুকিয়ে থাকবে */
+    width: 100%;
+    height: 100%;
+    background-color: #0070f3; /* হোভার করার পর যে কালারটি দেখতে চান */
+    z-index: -1; /* লেখাটিকে যেন কালারটি ঢেকে না ফেলে */
+    transition: left 2s ease; /* ডান থেকে বামে আসার গতি */
+}
+
+/* হোভার করলে যা ঘটবে */
+.info-item:hover::before {
+    left: 0; /* মাউস নিলে কালারটি ডান পাশ থেকে বামে (0 পজিশনে) চলে আসবে */
+}
+
+.info-item a:hover {
+    color: #fffdfd; /* হোভার করলে ভেতরের লেখা সাদা হয়ে যাবে */
+}
+.info-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.1); /* হোভার করলে ভেতরের লেখা সাদা হয়ে যাবে */
+}
+
+.info-item .icon {
+    font-size: 2rem;
+}
+
+.info-item h4 {
+    margin: 0;
+    color: #f109ac;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contact-link {
+    text-decoration: none;
+   
+    transition: color 0.3s ease;
+}
+
+.info-item a {
+    margin: 5px 0 0 0;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Right Column: Social Links Grid */
+.contact-links h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Base Card Style for Links */
+.link-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.link-icon {
+    font-size: 1.4rem;
+}
+
+.link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.1);
+}
+
+/* Custom Colors for Brands */
+.whatsapp { background-color: #25D366; }
+.facebook { background-color: #1877F2; }
+.linkedin { background-color: #0077B5; }
+.twitter { background-color: #1DA1F2; }
+.instagram { background-color: #E1306C; }
+.threads { background-color: #000000; }
+.tiktok { background-color: #010101; }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-container {
+        padding: 20px;
+    }
+}
+/* .custom-box {
+    position: relative;  
+    width: 250px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;  
+    background-color: #e6f2ff;  
+    border: 2px solid #0070f3;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;  
+    z-index: 1;
+    transition: color 2s ease; 
+}
+
+ 
+.slide-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;  
+    width: 100%;
+    height: 100%;
+    background-color: #0070f3;  
+    z-index: -1;  
+    transition: left 2s ease;  
+}
+
+ 
+.slide-left:hover::before {
+    left: 0;  
+}
+
+.slide-left:hover {
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    background-color: #0070f3;
+    filter: brightness(1.1);
+} /*
